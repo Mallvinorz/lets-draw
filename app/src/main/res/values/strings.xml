@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LetsDraw</string>
+    <string name="draw">Draw</string>
+    <string name="move">Move</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="clear">Clear</string>
 </resources>
