@@ -110,7 +110,6 @@ Java_com_mallvino_letsdraw_NativeEngine_nativeGetCurrentStrokeData(JNIEnv *env, 
     bool active = toEngine(handle)->getCurrentStrokeData(stroke);
     if (!active) return nullptr;
 
-    // format: [colorR, colorG, colorB, colorA, strokeWidth, jumlah_titik, x1,y1, x2,y2, ...]
     size_t totalSize = 6 + (stroke.points.size() * 2);
     std::vector<jfloat> buffer;
     buffer.reserve(totalSize);

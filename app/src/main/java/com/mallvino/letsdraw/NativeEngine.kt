@@ -2,7 +2,7 @@ package com.mallvino.letsdraw
 
 class NativeEngine {
 
-    // Handle/pointer ke instance DrawEngine di native. -1 = belum dibuat / sudah dihancurkan.
+    // Handle pointer
     private var enginePtr: Long = 0
 
     companion object {
@@ -109,7 +109,6 @@ class NativeEngine {
     }
 
     // Native function declarations
-    // Nama & urutan parameter harus PERSIS sama dengan native-lib.cpp
 
     private external fun nativeCreateEngine(): Long
     private external fun nativeDestroyEngine(handle: Long)
