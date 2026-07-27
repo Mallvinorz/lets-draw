@@ -9,7 +9,7 @@ data class StrokeData(
     val offsetX: Float,
     val offsetY: Float,
     val isSelected: Boolean,
-    val points: FloatArray // format: [x1, y1, x2, y2, ...]
+    val points: FloatArray
 )
 
 object StrokeParser {
